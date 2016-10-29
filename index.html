@@ -9,16 +9,37 @@
 
 </head>
 <body>
-    <h1>API REST crud test</h1>
+    <h1>COMANDERO</h1>
 
-    <h4>Add a Coffee Order</h4>
-    <p>NAME: <input type="text" id="name"></p>
-    <p>DRINK: <input type="text" id="drink"></p>
-    <button id="add-order">Add!</button>
+    <h4>Añade una Comanda</h4>
+    <p>Nombre:</p>
+    <p><input type="text" id="name"></p>
+    <p>Pedido:</p>
+    <p><input type="text" id="drink"></p>
+    <button id="add-order">MANDE!</button>
 
 
-    <h2>Coffee Orders</h2>
+    <h2>Comandas</h2>
     <ul id="orders" class="list-group"></ul>
+
+    <template id="order-template">
+      <li data-id='{{id}}'>
+        <p>
+          <strong>Nombre: </strong><br>
+          <span class="noedit">{{name}}</span>
+          <input class="edit name">
+        </p>
+      <p>
+        <strong>Pedido: </strong><br>
+        <span class="noedit">{{drink}}</span>
+        <input class="edit drink">
+      </p>
+      <button data-id='{{id}}' class='remove'>X</button>
+      <button class="editOrder noedit">EDIT</button>
+      <button class="saveEdit edit">SAVE</button>
+      <button class="cancelEdit edit">CANCEL</button>
+      </li>
+    </template>
 
 
 
