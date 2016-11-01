@@ -1,0 +1,28 @@
+{
+  "name": "cafe",
+  "version": "2.0.1",
+  "description": "Comandero para pedir cafes en una cafeteria con posibilidad a pagar los cafes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/padrisimo/comandero.git"
+  },
+  "keywords": [
+    "cafe"
+  ],
+  "author": "Adri�an Fernandez Chamizo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/padrisimo/comandero/issues"
+  },
+  "homepage": "https://github.com/padrisimo/comandero#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "mustache": "^2.2.1",
+    "mustache-loader": "^0.4.0",
+    "webpack": "^1.13.3"
+  }
+}

@@ -1,3 +1,6 @@
+var $ = require('jquery');
+var Mustache = require('mustache');
+
 $(function () {
   var $orders = $("#orders");
   var $drink = $("#drink");
